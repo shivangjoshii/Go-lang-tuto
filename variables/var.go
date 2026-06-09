@@ -17,5 +17,14 @@ func main() {
 
 	fmt.Println(district)
 
+	//late initialised var 
+
+	var naming string
+
+	naming = "Pawan" 
+
+	fmt.Println(naming)
+
+
 
 }
