@@ -24,3 +24,8 @@ Run- go run $file name
 Build - go build $ file name 
 
 ## Build will generate a  exe file which  is used in the production of the application
+
+
+## Notes 
+
+1. Go dont have the ternary operators, so  we have to use the same If else condition

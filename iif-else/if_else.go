@@ -4,46 +4,23 @@ import "fmt"
 
 func main() {
 
-	//taking input from the user  
-
-	var age  int 
+	var age int
 	var name string
 
-	fmt.Print("Enter your age :")
-	fmt.Scan(&age)
+	fmt.Println("== inititialised the vars==")
+	fmt.Println("== Checking if else conditions==")
 
-	fmt.Println("Enter Your name :")
+
+	fmt.Println("Enter You name :")
 	fmt.Scan(&name)
+	fmt.Println("Enter Your age :")
+	fmt.Scan(&age)
+	if age >= 18 {
+		fmt.Println(name,", You are an adult")
 
-	if age > 18 {
-		fmt.Println("Hii ", name , "Congrats ! You are eligible to go in")
-		}else if age  >12{
-			fmt.Println("Hey kid - " , name , "You should go home")
-		}else{
-			fmt.Println("Hii", name, "Baby , You are not allowed to go in")
-		}
-
-
-		// testing like middleware for RBAC
-
-		var role int
-
-		fmt.Println("Please Enter your role is 1, 2 and 3")
-		fmt.Scan(&role)
-
-		
-
-
-		if role == 1 {
-			fmt.Println ("welcome admin")
-		}else if role ==2{
-			fmt.Println("Hii user , Enjoy the app")
-
-		}else{
-			fmt.Println("Hii Guest , Please sign up to enjoy the app")
-		}
-
-
+	} else if age >12 && age < 18 {
+		fmt.Println(name,", You are a teenager")
+	}
 
 
 }
